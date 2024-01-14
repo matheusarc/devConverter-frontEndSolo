@@ -21,11 +21,11 @@ function handleSubmit(e) {
 
 function converter() {
     if(selectedCurrency.value === 'eur') {
-        valueConverted = inputValue.value * 5.32;
+        valueConverted = inputValue.value / 5.32;
         result.innerHTML = valueFormater('pt-BR', 'EUR');
 
     } else if(selectedCurrency.value === 'dol') {
-        valueConverted = inputValue.value * 4.85;
+        valueConverted = inputValue.value / 4.85;
         result.innerHTML = valueFormater('en-US','USD');
     }
 
